@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .banner{
+                z-index: 1;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+ text-decoration: none;
+    color: #fff;
+    text-transform:uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.button2 {
+        width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #ff2d75;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.span2 {
+     background: #ff2d75;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+            body {
+                min-height: 100vh;
+                background: #0c192c;
+            }
+            .bg {
+                position: relative;
+                height: 100vh;
+                width: 100%;
+                overflow: hidden;
+            }
+            .pix {
+                position: relative;
+                display: flex;
+            }
+            .pix span:nth-child(even) {
+                background: #ff2d75;
+                 box-shadow: 0 0 0 10px #ff2d7544, 
+                0 0 50px #ff2d75, 0 0 100px #ff2d75;
+            }
+            .pix span {
+                position: relative;
+                width: 35px;
+                height: 10px;
+                background: #4fc3dc;
+                border-radius: 30px;
+                margin: 0 4px;
+               box-shadow: 0 0 0 10px #4fc3dc44, 
+                0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+                animation: animate 15s linear infinite;
+                animation-duration: calc(125s / var(--1));
+            }
+            @keyframes animate {
+                0% {
+                    transform: translateY(100vh) scale(0);
+                }
+                100% {
+                    transform: translateY(-10vh) scale(1);
+                }
+            }
+        </style>
+      </head>
+      <body>
+        
+        <div class="bg">
+            <div class="banner">
+   <div class="navbar">
+      <img src="channel-8.jpeg" class="logo">
+     <ul>
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">Bedroom</a></li> 
+       <li><a href="#">Dining</a></li> 
+       <li><a href="#">kitchen</a></li> 
+       <li><a href="#">Backyard</a></li> 
+       </ul> 
+      </div>
+      </div>
+      <div class="content">
+      <h1>DESIGN YOUR GAMING ROOM</h1>
+      <P>subscribe to emmswrld Tutorials youtube channel to watch more about gaming,<br>and playstation,gaming tech consoles and more.</P>
+      <div>
+      <button type="button"><span></span>DOWNLOAD X RUNNER </button>
+      <button type="button" class="button2"><span class="span2"></span>LINK TO YOUTUBE</button>
+    </div>
+      </div>
+            <div class="pix">
+                <span style="--1:11;"></span>
+                <span style="--1:12;"></span>
+                <span style="--1:24;"></span>
+                <span style="--1:10;"></span>
+                <span style="--1:14;"></span>
+                <span style="--1:23;"></span>
+                <span style="--1:18;"></span>
+                <span style="--1:16;"></span>
+                <span style="--1:19;"></span>
+                <span style="--1:20;"></span>
+                <span style="--1:22;"></span>
+                <span style="--1:25;"></span>
+                <span style="--1:18;"></span>
+                <span style="--1:21;"></span>
+                <span style="--1:15;"></span>
+                <span style="--1:13;"></span>
+                <span style="--1:26;"></span>
+                <span style="--1:17;"></span>
+                <span style="--1:13;"></span>
+                <span style="--1:28;"></span>
+                <span style="--1:11;"></span>
+                <span style="--1:12;"></span>
+                <span style="--1:24;"></span>
+                <span style="--1:10;"></span>
+                <span style="--1:14;"></span>
+                <span style="--1:23;"></span>
+                <span style="--1:18;"></span>
+                <span style="--1:16;"></span>
+                <span style="--1:19;"></span>
+                <span style="--1:20;"></span>
+                <span style="--1:22;"></span>
+                <span style="--1:25;"></span>
+                <span style="--1:18;"></span>
+                <span style="--1:21;"></span>
+                <span style="--1:15;"></span>
+                <span style="--1:13;"></span>
+                <span style="--1:26;"></span>
+                <span style="--1:17;"></span>
+                <span style="--1:13;"></span>
+                <span style="--1:28;"></span>
+                <span style="--1:11;"></span>
+                <span style="--1:12;"></span>
+                <span style="--1:24;"></span>
+                <span style="--1:10;"></span>
+                <span style="--1:14;"></span>
+                <span style="--1:23;"></span>
+                <span style="--1:18;"></span>
+                <span style="--1:16;"></span>
+                <span style="--1:19;"></span>
+                <span style="--1:20;"></span>
+                <span style="--1:22;"></span>
+                <span style="--1:25;"></span>
+                <span style="--1:18;"></span>
+                <span style="--1:21;"></span>
+                <span style="--1:15;"></span>
+                <span style="--1:13;"></span>
+                <span style="--1:26;"></span>
+                <span style="--1:17;"></span>
+                <span style="--1:13;"></span>
+                <span style="--1:28;"></span>
+                <span style="--1:11;"></span>
+                <span style="--1:12;"></span>
+                <span style="--1:24;"></span>
+                <span style="--1:10;"></span>
+                <span style="--1:14;"></span>
+                <span style="--1:23;"></span>
+                <span style="--1:18;"></span>
+                <span style="--1:16;"></span>
+                <span style="--1:19;"></span>
+                <span style="--1:20;"></span>
+            </div>
+        </div>
+    </body>
+</html>
